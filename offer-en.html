@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Offer EN</title>
+    <style>
+      .offer-new {
+        font-family: "Tahoma" !important;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: left;
+        margin-top: 100px;
+      }
+      .offer-new .inner-info {
+        display: flex;
+        padding: 10px 20px;
+        -webkit-box-align: center;
+        align-items: center;
+        background-color: rgb(245, 247, 254);
+        position: relative;
+      }
+      .offer-new .inner-info .inner-img {
+        width: 25px;
+        height: 25px;
+      }
+      .offer-new .inner-info .inner-img img {
+        width: 100%;
+        height: auto;
+      }
+      .offer-new .inner-info .inner-details {
+        padding: 0 10px;
+        font-weight: 400;
+      }
+
+      .offer-new .inner-info .inner-details .old-price {
+        color: rgb(126, 133, 155);
+        text-decoration: line-through;
+      }
+      .offer-new .inner-info .inner-tip .inner-des {
+        cursor: pointer;
+      }
+      .offer-new .inner-info .inner-tip .show-tip {
+        position: absolute;
+        background: rgb(255, 255, 255);
+        right: 0px;
+        border: 1px solid rgb(227, 229, 240);
+        top: 70px;
+        box-sizing: border-box;
+        animation: 0.5s ease-in-out 0s 1 normal none running delay;
+        z-index: 2;
+        box-shadow: rgb(58 58 58 / 8%) 0px 0px 16px 8px;
+        padding: 20px;
+        border-radius: 5px;
+        width: 270px;
+        display: none;
+      }
+
+      .offer-new .inner-info .inner-tip .show-tip .close-offer {
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        border-radius: 100%;
+        padding: 6px;
+        border: 1px solid rgb(0, 0, 0);
+        cursor: pointer;
+      }
+      .offer-new .inner-info .inner-tip .show-tip .close-offer .cross {
+        width: 6px;
+        height: 6px;
+      }
+      .offer-new .inner-info .inner-tip .show-tip.appear,
+      .offer-new .inner-info .inner-tip .show-tip .close-offer.appear {
+        display: block;
+      }
+
+      .offer-new .inner-info .inner-tip .show-tip .show-text {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        z-index: 3;
+      }
+      .offer-new .inner-info .inner-tip .show-tip .show-text p {
+        font-size: 12px;
+      }
+      .offer-new .inner-info .inner-tip .show-tip .show-text a {
+        color: #151515;
+        z-index: 2;
+        text-decoration: underline;
+        font-weight: bold;
+      }
+
+      .offer-new .inner-info .inner-tip .show-tip .show-text .texty {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+      }
+      .offer-new .inner-info .inner-tip .show-tip .show-text .text-free {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+      .offer-new .inner-info .inner-tip .show-tip .show-text .text-free .icon {
+        max-width: 30px;
+        height: auto;
+      }
+      .offer-new
+        .inner-info
+        .inner-tip
+        .show-tip
+        .show-text
+        .text-free
+        .icon
+        img {
+        width: 100%;
+        height: auto;
+      }
+      .offer-new
+        .inner-info
+        .inner-tip
+        .show-tip
+        .show-text
+        .text-free
+        .text-infoy {
+        margin-left: 15px;
+        font-size: 14px;
+      }
+      @media screen and (max-width: 767px) {
+        .offer-new .inner-info .inner-tip .show-tip {
+          top: 110px;
+          width: 100%;
+        }
+        .offer-new .inner-info .inner-img {
+          width: 120px;
+          height: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <li class="offer-new">
+      <input type="checkbox" />
+      <div class="inner-offer">
+        <div class="inner-info">
+          <div class="inner-img">
+            <img
+              src="https://york.com.sa/images/uploaded/flash-sale.png"
+              alt="flash sale"
+            />
+          </div>
+          <div class="inner-details">
+            <p>
+              <b>Extra Services:</b> Replacement Offer <b>(Jeddah Only)</b> –
+              FREE Pipes, Dismantling & Installation worth [+
+              <span class="old-price">478 SAR</span> FREE].
+            </p>
+          </div>
+          <div class="inner-tip">
+            <div class="inner-des">
+              <img src="https://york.com.sa/images/uploaded/help-tip.png" />
+            </div>
+            <div class="show-tip">
+              <div class="close-offer">
+                <svg
+                  width="23"
+                  height="23"
+                  viewBox="0 0 23 23"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="cross"
+                >
+                  <path
+                    d="M0.324008 1.909C-0.104992 1.48 -0.104992 0.766002 0.324008 0.322002C0.768008 -0.106998 1.46701 -0.106998 1.91101 0.322002L11.434 9.861L20.973 0.322002C21.402 -0.106998 22.116 -0.106998 22.544 0.322002C22.988 0.766002 22.988 1.481 22.544 1.909L13.021 11.433L22.544 20.972C22.988 21.401 22.988 22.115 22.544 22.559C22.115 22.988 21.401 22.988 20.973 22.559L11.434 13.02L1.91101 22.559C1.46701 22.988 0.768008 22.988 0.324008 22.559C-0.104992 22.115 -0.104992 21.4 0.324008 20.972L9.84701 11.433L0.324008 1.909Z"
+                    fill="#1E201D"
+                  ></path>
+                </svg>
+              </div>
+              <div class="show-text">
+                <p>You can now replace your old unit with a new one with</p>
+                <div class="texty">
+                  <div class="text-free">
+                    <div class="icon">
+                      <img
+                        src="delivery-truck.png"
+                        alt="FREE
+                        delivery"
+                      />
+                    </div>
+                    <div class="text-infoy">FREE delivery</div>
+                  </div>
+                  <div class="text-free">
+                    <div class="icon">
+                      <img
+                        src="plumbing.png"
+                        alt="FREE
+                        delivery"
+                      />
+                    </div>
+                    <div class="text-infoy">Pipes</div>
+                  </div>
+                  <div class="text-free">
+                    <div class="icon">
+                      <img
+                        src="repair.png"
+                        alt="FREE
+                        delivery"
+                      />
+                    </div>
+                    <div class="text-infoy">Dismantling & Installation</div>
+                  </div>
+                </div>
+                <p>
+                  This offer cannot be combined with other offers. For more
+                  details
+                  <a
+                    href="https://york.com.sa/en/terms-conditions"
+                    target="_blank"
+                    >Click Here</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <script>
+      const innerTip = document.querySelector(".inner-des");
+      const innerShow = document.querySelector(".show-tip");
+      const closeOffer = document.querySelector(".close-offer");
+
+      innerTip.addEventListener("click", function () {
+        innerShow.classList.add("appear");
+      });
+      closeOffer.addEventListener("click", function () {
+        innerShow.classList.remove("appear");
+      });
+    </script>
+  </body>
+</html>
